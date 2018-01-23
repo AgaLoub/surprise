@@ -1,2 +1,62 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div id="home">
+  <div class="home-content">
+    <div class="home-text">
+      <h1>Vous voulez découvrir la suite ? <br></h1>
+       <div class="link">
+        <h3 style="background-color: #CF0A2C; padding: 10px"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg1" style="text-decoration: none; color: white; cursor: pointer;">Cliquez ici</a></h3>
+       </div>
+
+    </div>
+
+    <div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h1 class="ml15">
+            <span class="word">PREPAREZ</span>
+            <span class="word">VOUS</span>
+            <span class="word">À</span>
+            <span class="word">UNE</span>
+            <span class="word">ANNONCE</span>
+            <span class="word">INCROYABLE</span> <br>
+            <span class="word">...</span> <br>
+              <div class="annonce">
+                <span class="word">ON</span>
+                <span class="word">VA</span>
+                <span class="word">SE</span>
+                <div id="big-world"><span class="word">MARIER ! </span></div>
+              </div>
+              <div class="photo">
+                <%= image_tag 'montage.jpg', class: "word" %>
+                <!-- <span class="word"><img src="images/montage.jpg" alt=""></span> -->
+
+              </div>
+            </h1>
+          <!-- <h4 class="text-center"><img src="images/montage.jpg" alt=""></h4> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script>
+
+  anime.timeline({loop: true})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 1500,
+    delay: function(el, i) {
+      return 2000 * i;
+    }
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 10000,
+    easing: "easeOutExpo",
+    delay: 100000
+  });
+</script>

@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: space-around;
   text-align: center;
+  overflow: hidden;
   p {
     margin-top: 1.5em;
   }
@@ -84,16 +85,16 @@
     width: 200px;
   }
   .modal-content {
-    width: 75%;
+    width: 100%;
   }
   .ml15 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .ml15 .annonce {
-    font-size: 30px;
+    font-size: 35px;
   }
   .ml15 #big-world {
-    font-size: 35px;
+    font-size: 45px;
   }
 }
 

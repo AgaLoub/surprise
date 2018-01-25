@@ -61,10 +61,9 @@
     font-size: 20px;
     width: 200px;
   }
-  // .modal-content {
-  //   background-position: cover;
-  //   background-position: 100%;
-  // }
+  .modal-content {
+    overflow: auto;
+  }
   .ml15 {
     font-size: 30px;
   }
@@ -75,4 +74,8 @@
     font-size: 45px;
   }
 }
-// Specific CSS for your home-page
+// @media (max-width: @screen-xs-min) {
+//   .modal-xs {
+//     width: @modal-sm;
+//   }
+

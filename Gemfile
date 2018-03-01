@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.3.5'
 
 
-gem 'rack-reverse-proxy', :require => 'rack/reverse_proxy'
+# gem 'rack-reverse-proxy', :require => 'rack/reverse_proxy'
 
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
